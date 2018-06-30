@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        // watches for any file changes and compiles automatically
+        "watch": true,
+        // added to support Map and Set data structures (lib is available in TS ver. > 2.3)
+        // if you make any change to lib, include any default libs as well
+        "lib": ["es6", "dom"],
+        // to support iteration on Set and Map objects
+        "downlevelIteration": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

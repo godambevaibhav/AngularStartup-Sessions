@@ -1,0 +1,134 @@
+Typescript:
+    ☐ "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript"
+    ☐ Let’s take a quick look at how far the TypeScript team has come:
+        ☐ 2010 – Anders and his team begin development
+        ☐ 2012 – First public version released (TypeScript 0.8)
+        ☐ 2013 – TypeScript 0.9 released, adding support for generics
+        ☐ 2014 – TypeScript 1.0 released, including support baked into Visual Studio
+        ☐ 2017 – TypeScript 2.1 released
+    ☐ JavaScript was originally named JavaScript in hopes of capitalizing on the success of Java.
+    ☐ Netscape then submitted JavaScript to ECMA International for Standardization. (ECMA is an organization 
+    that standardizes information)
+    ☐ This results in a new language standard, known as ECMAScript.
+    ☐ What IS TypeScript?
+        ☐ ES is simply short for ECMAScript. Every time you see ES followed by a number, it is referencing an 
+        edition of ECMAScript. In fact, there are eight editions of ECMAScript published. Lets dive into them:
+            ☐ ES1, ES2, ES3, ES4
+                ☐ ES1: June 1997 
+                ☐ ES2: June 1998 
+                ☐ ES3: Dec. 1999 
+                ☐ ES4: Abandoned
+                ☐ ES5 - December 2009: Nearly 10 years later, ES5 was released in 2009
+                ☐ ES2015 (ES6) - June 2015: Perhaps the cause for all of your confusion begins here. 
+                You see, ES6 and ES2015 are the same thing.
+                ☐ ES2016 (ES7) - June 2016: Seventh edition of ECMAScript.
+                ☐ ES2017 (ES8) - June 2017: Eighth edition of ECMAScript.
+                ☐ ES.Next - You may have also seen ES.Next used online. This term is dynamic and references 
+                the next version of ECMAScript coming out.
+
+A good read on Javascript Engine and How it works: 
+    ☐ https://developer.telerik.com/featured/a-guide-to-javascript-engines-for-idiots/
+
+What is Node.js?:
+    ☐ Node.js is an Open-source framework
+    ☐ Node.js provides a JavaScript runtime built on Chrome's V8 JavaScript engine (Same used in Chrome browser)
+    ☐ Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+    ☐ ...
+
+What is NPM?:
+    ☐ NPM is the package manager used by Node.js applications.
+    ☐ It is like Maven for Java or Composer for PHP.
+    ☐ The Command Line Interface (CLI) : you can run it with 'npm' command.
+
+Managing multiple JS files:
+    ☐ Create package.json -> npm init
+
+Setup:
+    ☐ Download VS Code -> https://code.visualstudio.com/download
+    ☐ Download Node.js -> https://nodejs.org/en/download/
+    ☐ node -v
+    ☐ npm -v
+    ☐ Install Typescript using npm -> npm install -g typescript
+    ☐ tsc -v
+    
+Run Typescript code:
+    ☐ Compile ts file -> tsc YOUR_FILE.ts
+    ☐ Use npm to run js file -> node YOUR_FILE.js
+    ☐ Create a Typescript project -> tsc --init (creates a tsconfig.json)
+
+Automatically compile and restart your node application:
+    ☐ Modify tsconfig.json -> add this <<"watch": true>> in compilerOptions. Run 'tsc' command.
+    ☐ commonjs / AMD -> CommonJS modules enables you to include javascript modules within the current scope and 
+    effectively keeps the global scope from being polluted.
+    ☐ Install Nodemon -> npm install -g nodemon
+        ☐ Monitor for any changes in your node.js application and automatically restart the server - perfect 
+        for development.
+    ☐ nodemon YOUR_FILE.js
+
+Typescript Essentials Part-1:
+    ☐ Assignment in ES6 -> let, const keywords
+        ☐ const with primitive 
+        ☐ const with Arrays
+            const emails = ['sam@email.com', 'bob@email.com', 'john@email.com'];
+            //const emails = [];
+            emails.push('alice@email.com');
+    ☐ Block scoping -> var vs. let, const
+        let limit = 100;
+        {
+            let limit = 10;
+            console.log('inner limit', limit);
+        }
+        console.log('outer limit', limit);
+        ☐ What happens if let is replaced with var or const?
+        ☐ Local variables in functions don't intervene with each other.
+    ☐ Template literals -> let a = `Hello, ${insert}`; -> Get rid of concatenation.
+    ☐ Operating and Destructuring assignment
+        ☐ Spread operator -> { ... } -> let b = {10, ...a, 70};
+        ☐ Rest parameters -> function(...) {}
+            function collect(...a) {
+                console.log(a);
+            }
+            collect(1, 2, 3, 4, 5);
+        ☐ Destructuring assignment on Arrays and Objects
+            // Arrays
+            let z = [4, 5, 6];
+            let [four, five] = z;
+            console.log(four, five);
+            // Objects
+            let king = { name: 'Mufasa', kids: 1};
+            let {name, kids} = king;
+            console.log(name, kids);
+        ☐ Exception-1
+            let king = { name: 'Mufasa', kids: 1};
+            let name, kids;
+            //{name, kids} = king;
+            ({name, kids} = king);
+            console.log(name, kids);
+
+Overview:
+    ☐ Let replaces var in es6 in term of variable assignment. Let also allows for block scoping, in contrast 
+    to var.
+    ☐ Const declares variables that cannot be re-assigned. Constants also allow for block scoping along with 
+    ‘let.’
+    ☐ Template literals, created by a pair of back-ticks, allow for embedded-expressions using the dollar-sign 
+    and a pair of curly braces: `${...}`
+    ☐ Local scope refers to the set of statements, variables, objects, and more that confine to a coding block 
+    denoted by a pair of curly braces: { ... }
+    ☐ Global scope refers to the set of statements, variables, objects, methods, and more that exist outside 
+    and beyond all local scope functions and coding blocks.
+    ☐ The spread operator spreads individual values to allow for expansion with multiple arguments and elements. 
+    Denoted by three periods: ...
+    ☐ Rest parameters allow for the gathering of multiple parameter calls into one array: Denoted by three 
+    periods: …
+    ☐ Destructuring assignment on arrays allows for much more efficient array manipulation and assigns multiple 
+    variables from array data based on the index value.
+    ☐ Destructuring assignment on objects allows for more concise object manipulation and assigns multiple 
+    variables from object data based on keynames.
+        
+References:
+    ☐ Official documentation: https://www.typescriptlang.org/docs/handbook/basic-types.html
+    ☐ sourceMap property -> https://stackoverflow.com/questions/17493738/what-is-a-typescript-map-file
+    ☐ https://stackoverflow.com/questions/41993811/understanding-target-and-module-in-tsconfig
+    ☐ Working with Internal and External Modules ->
+         https://blog.oio.de/2014/01/31/an-introduction-to-typescript-module-system/
+    ☐ CommonJS vs AMD -> http://requirejs.org/docs/whyamd.html

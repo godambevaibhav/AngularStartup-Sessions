@@ -1,0 +1,30 @@
+Data Structures:
+    ☐ Define a Set and add data -> add(value), has(), size, values()
+    ☐ Use enhanced for...of loop -> for (let element of setVar.values())
+    ☐ Convert string to array using STR.split("")
+    ☐ Create a Set from array
+        ☐ Problem: Find unique chars in a string.
+    ☐ Create a Map and set data -> set(K, V), has(K), size, entries()
+    ☐ Use primitive, objects and functions as keys in the Map
+    ☐ Create a map using 2d Array.
+        // Fix for issue : Argument of type '(string | number)[][]' is not assignable to parameter of 
+        // type 'Iterable<[{}, {}]>'.
+        type myTuple = [ number, string ];
+
+        // let array_2d = [[1, 'one'], [2, 'two']]; // gives above error
+        let array_2d:myTuple[] = [[1, 'one'], [2, 'two']];
+        let map = new Map(array_2d);
+        map.set(3, 'three');
+        console.log(map);
+
+        for(let [key, val] of map.entries()) {
+            console.log(`${key} points to ${val}`);
+        }
+    ☐ Use enhanced for...of loop to Iterate the map -> for(let [key, val] of mapVar.entries())
+        ☐ Problem: Find the char count in a given string. 
+
+Overview:
+    ☐ A Set compares to a more advanced array that has all unique elements and no duplicate values.
+    ☐ Set iteration frequently occurs through the values() helper method.
+    ☐ A Map represents a more advanced object in es6 with key-value pairs that can have non-string keys.
+    ☐ Map iterate frequently occurs through the entries() helper method.

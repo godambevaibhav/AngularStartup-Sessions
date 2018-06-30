@@ -1,0 +1,18 @@
+Closures:
+    ☐ var & let : Function & Block scope, IIFE
+    ☐ A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain. 
+    ☐ The closure has three scope chains: 
+        ☐ it has access to its own scope (variables defined between its curly brackets), 
+        ☐ it has access to the outer function’s variables, 
+        ☐ and it has access to the global variables.
+    ☐ The inner function has access not only to the outer function’s variables, but also to the outer function’s parameters.
+    ☐ Note that the inner function cannot call the outer function’s arguments object, however, even though it can call the 
+    outer function’s parameters directly.
+    ☐ Function factories
+    ☐ Private methods
+        ☐ Closures in JavaScript and ES6 refer to functions that remember their creation environment and can further reference
+            that environment’s independent variables.
+        ☐ Function factories create functions based on returning inner functions that manipulate its own arguments and 
+            the arguments of the outer function.
+        ☐ Data encapsulation and private methods don’t exist natively in JavaScript but can be emulated with closures for 
+            data restriction and limited access.

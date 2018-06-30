@@ -1,0 +1,50 @@
+Pre-requisites:
+    ☐ Strong grasp of Javascript
+    ☐ Familiarity with HTML/CSS
+
+Few important terms:
+    ☐ Responsive Web Design (RWD)
+    ☐ Single Page Application (SPA)
+    ☐ JIT (Just-in-time) compiler
+    ☐ AOT (Ahead-of-time) compiler
+    ☐ Transpiling - converts ES6 code to ES5 or Javascript code
+    ☐ Polyfills - A polyfill is code that implements a feature on web browsers that do not support the 
+    feature natively (via. a Javascript library)
+    ☐ Tree-shaking - A term commonly used in the JavaScript context for dead-code elimination. (while 
+    optimizing JS code into a single bundle)
+    ☐ CDN (Content Delivery Network)
+    ☐ MVVM (Model - View - ViewModel) Architecture
+    ☐ n-tier Architecture
+    ☐ Microservices
+    ☐ DI (Dependency Injection)
+
+Typescript:
+    ☐ TypeScript is a strict superset of ECMAScript 2015, which is itself a superset of ECMAScript 5, 
+    commonly referred to as JavaScript.
+    ☐ It can be integrated with build automation tools.
+    ☐ Based on ECMAScript-262 specification
+    ☐ ECMAScript 6 - It is the sixth edition of the ECMA-262 standard, and features major changes and 
+    improvements to the ECMAScript specification.
+        Synonyms: 
+            ☐ ES6 (ECMAScript 6th edition), ES2015, and ECMAScript 2015
+    ☐ Babel - A transpiler that can convert ES6 code to ES5 code 
+        ☐ (to have backward compatibility with IE and Edge browsers which don't support ES6 yet.)
+
+Important Concepts in Javascript:
+    ☐ Using var, let & const
+        ☐ Function vs block scope (https://edgecoders.com/function-scopes-and-block-scopes-in-javascript-25bbd7f293d7)
+        ☐ https://hackernoon.com/js-var-let-or-const-67e51dbb716f
+    ☐ Variable scope and Hoisting (http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/)
+    ☐ Javascript Objects (http://javascriptissexy.com/javascript-objects-in-detail/)
+    ☐ Javascript Prototype (http://javascriptissexy.com/javascript-prototype-in-plain-detailed-language/)
+    ☐ OO Javascript (http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
+    ☐ 'this' in Javascript (http://javascriptissexy.com/understand-javascripts-this-with-clarity-and-master-it/)
+    ☐ Closures (http://javascriptissexy.com/understand-javascript-closures-with-ease/)
+        ☐ Modules and IIFE (https://hashnode.com/post/do-es6-modules-make-the-case-of-iifes-obsolete-civ96wet80scqgc538un20es0)
+    ☐ Apply, Call and Bind methods (http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+    ☐ Dispatching custom events:
+         ☐ https://eloquentjavascript.net/15_event.html
+         ☐ https://javascript.info/dispatch-events)
+    ☐ Callbacks
+    ☐ Immediately-Invoked Function Expression (IIFE)
+

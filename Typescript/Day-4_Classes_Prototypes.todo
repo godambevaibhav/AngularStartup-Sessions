@@ -1,0 +1,36 @@
+Classes & Prototyoes:
+    ☐ Define a class with a constructor
+    ☐ Extend that class
+        ☐ Invoke super class constructor
+    ☐ Define a method in parent class (Use String templates to log message)
+    ☐ Override the method in child class
+    ☐ Extract parent to a module
+    ☐ Import the parent and extend child class (Code refactor needed)
+    ☐ Create a new class and add 'static' methods to it.
+    ☐ Prototypes
+        ☐ Create a object-type using 'object constructor function'.
+        ☐ Create Objects by calling the constructor function with the new keyword.
+        ☐ Add a Property & a Function to an Object -> Does not add to any other objects of same type.
+        ☐ You cannot add a new property to an object constructor the same way you add a new property to an 
+        existing object. 
+            ☐ You must add it to the constructor function.
+        ☐ Using the prototype Property
+
+Overview:
+    ☐ Classes in JavaScript construct structures of data based off of the state and behavior of real world objects 
+    and introduce a system of inheritance.
+    ☐ The constructor keyword initializes an object for a class.
+    ☐ The extends keyword creates subclasses and children of parent classes.
+    ☐ Static methods in classes can be called even outside the context of class.
+    ☐ Object-oriented programming models objects to create programs centered around the interactions of these 
+    objects with each other. Major programming languages like C, Java, and Ruby contain heavy support for 
+    object-oriented programming.
+    ☐ JavaScript is not based on object-oriented programming, but a prototypal-inheritance model.
+    ☐ A prototype is a characteristic in every JavaScript object that reveals its parent and the properties that 
+    it inherits.
+    ☐ All JavaScript objects contain a prototype and can trace their chain of prototypal inheritance all the way 
+    back to the base level Object prototype.
+    ☐ Arrow functions don’t create their own local ‘this’ object like a normal function prototype, but instead 
+    refer to the ‘this’ tied to its outer scope.
+    ☐ Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects.
+    ☐ The Object.prototype is on the top of the prototype inheritance chain.

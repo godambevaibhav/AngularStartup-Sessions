@@ -1,0 +1,58 @@
+Typescript Essentials Part-2:
+    ☐ Arrow functions
+        function cheer() {} -> function declaration & not anonymous
+        let cheer = function() {} -> function expression & this is anonymous
+        // arrow function
+        setTimeout(() => {
+            console.log('Woohoo');
+        }, 3000)
+        // extract anonymous function
+        let cheer = () => {
+            console.log('Woohoo');
+        }
+    ☐ Map and Filter method
+        // map helper method
+        let values = [20, 30, 40];
+        let double = (n) => {
+            return n*2;
+        }
+        let doubled = values.map(double);
+        console.log(doubled);
+        // we can replace arrow function into map method
+        // we can remove {} and return keyword in the arrow function, if it contains single statement.
+
+        // filter helper method
+        let points = [7, 16, 21, 4, 3, 22, 5];
+        let highScores = points.filter((n) => {
+            return n > 15;
+        });
+        console.log(highScores);
+    ☐ String helper methods
+        ☐ strVar.repeat(<n>)
+        ☐ strVar.startsWith(<STR>), strVar.endsWith(<STR>), strVar.includes(<STR>) -> returns a boolean
+    ☐ Checking numbers
+        ☐ Number.isFinite(), Number.isSafeInteger()
+    ☐ Modules - 'import', 'export' and 'default'
+
+Overview:
+    ☐ Errors : String helpers -> https://github.com/Microsoft/TypeScript/issues/6373
+    ☐ ES6 introduces the arrow function and a whole lot of helper methods to simplify manipulating arrays, 
+    objects, strings, and numbers.
+        ☐ The arrow function works just like a normal function expression, but with reduced syntax: ( ) => { … }
+        ☐ By default, arrow functions are anonymous because we declare them with an operator rather than the 
+        ‘function’ keyword.
+        ☐ The map helper method creates arrays by calling functions on each individual element of an initial 
+        array.
+        ☐ The filter helper method creates arrays based on the same elements of an original array depending 
+        on a certain test.
+        ☐ String.repeat() creates large strings by concatenating a string a certain number of times.
+        ☐ The search methods for strings include .startsWith, .endsWith, .includes, and more.
+        ☐ Number type checking can occur through the Number.isFinite method.
+        ☐ Number safety checking can occur through the Number.isSafeInteger method.
+    ☐ Modules refer to reusable pieces of code within an application. Most often, they exist independently 
+    within separate files, which come in handy when having to split up a large application.
+        ☐ The export keyword sends primitive values, objects, or functions from one module to another.
+        ☐ The import keyword receives primitive values, objects, or functions from another module.
+        ☐ Using the default keyword gives a module a fallback function when exporting multiple values and 
+        methods.
+
